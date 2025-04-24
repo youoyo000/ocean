@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>資管-二B-李宥萱</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+  </style>
+</head>
+<body class="text-gray-800 bg-[#F0F9F9] flex flex-col min-h-screen">
+
+  <!-- ✅ 響應式導覽列 -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <nav class="container mx-auto px-4 py-3">
+      <div class="flex justify-between items-center">
+        <h2 class="text-xl font-bold text-[#4F9D9D]">我的履歷網頁</h2>
+        <!-- 漢堡按鈕（手機用） -->
+        <button id="menu-toggle" class="md:hidden text-2xl" aria-label="Toggle Menu">
+          &#9776;
+        </button>
+      </div>
+      <!-- 導覽列項目 -->
+      <ul id="menu" class="hidden md:flex flex-col md:flex-row md:space-x-6 mt-4 md:mt-0 text-sm">
+        <li><a href="#data" class="block py-2 md:py-0 hover:text-[#4F9D9D]">基本資料</a></li>
+        <li><a href="#interests" class="block py-2 md:py-0 hover:text-[#4F9D9D]">興趣</a></li>
+        <li><a href="Resumes.html" class="block py-2 md:py-0 hover:text-[#4F9D9D]">履歷</a></li>
+        <li><a href="Test Results.html" class="block py-2 md:py-0 hover:text-[#4F9D9D]">測驗結果</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 封面 -->
+  <section class="py-20 text-center bg-[#95CACA] text-white">
+    <h1 class="text-4xl font-bold mb-2">李宥萱</h1>
+    <p class="text-lg">靜宜大學 資訊管理學系 二年 B班</p>
+  </section>
+
+  <!-- 主內容 -->
+  <main class="bg-[#f0fff0]" >
+    <!-- 關於我 -->
+    <section id="about" class="py-12 px-6 bg-[#FFE66F]" data-aos="fade-up">
+      <div class="max-w-3xl mx-auto text-center">
+        <p class="text-lg font-bold leading-relaxed">
+          “成功，不是你所站的位置，而是你要去的方向。每一步都充滿挑戰，但正是這些挑戰塑造了我們的成長與進步。只要堅持自己相信的路，不斷努力，就能一步步接近理想中的自己。”
+        </p>
+      </div>
+    </section>
+
+    <!-- 基本資料 -->
+    <section id="data" class="py-12 px-4" data-aos="fade-up">
+      <div class="max-w-md mx-auto bg-white rounded-2xl shadow-lg p-6">
+        <h2 class="text-2xl font-semibold mb-4 text-center text-[#4F9D9D]">基本資料</h2>
+        <p class="mb-2">姓名：李宥萱</p>
+        <p class="mb-2">學校：靜宜大學</p>
+        <p class="mb-2">系級：資訊管理學系 二年 B班</p>
+        <p class="mb-2">學號：411203356</p>
+        <p class="mb-2">信箱：s1120335@O365st.pu.edu.tw</p>
+      </div>
+    </section>
+
+    <!-- 興趣 -->
+    <section id="interests" class="py-12 px-4" data-aos="fade-up">
+      <div class="max-w-md mx-auto bg-white rounded-2xl shadow-lg p-6 text-center">
+        <h2 class="text-2xl font-semibold mb-4 text-[#4F9D9D]">興趣</h2>
+        <p>彈鋼琴、看影集、看小說、記錄生活</p>
+      </div>
+    </section>
+
+    <!-- 連結按鈕 -->
+    <section class="py-8 text-center" data-aos="zoom-in">
+      <div class="space-x-4">
+        <a href="Resumes.html" class="inline-block bg-[#4F9D9D] text-white px-6 py-2 rounded-full shadow hover:bg-[#3A7D7D] transition">履歷</a>
+        <a href="Test Results.html" class="inline-block bg-[#4F9D9D] text-white px-6 py-2 rounded-full shadow hover:bg-[#3A7D7D] transition">職涯測驗</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- 頁尾 -->
+  <footer class="text-center text-sm py-4 bg-[#4F9D9D] text-white">
+    © 2025 李宥萱. All rights reserved.
+  </footer>
+
+  <!-- 響應式切換 JS -->
+  <script>
+    const toggleBtn = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu");
+
+    toggleBtn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+
+  <!-- AOS動畫 -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
