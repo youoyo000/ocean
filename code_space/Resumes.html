@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>李宥萱的履歷</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes fade-in {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in {
+      animation: fade-in 1s ease-out both;
+    }
+  </style>
+</head>
+<body class="text-gray-800" style="background-color:#f0fff0;">
+
+  <!-- 導覽列 -->
+  <header class="bg-#f0fff0 fixed top-0 w-full z-50">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold">李宥萱</h1>
+      <ul class="flex space-x-4 text-sm">
+        <li><a href="#about" class="hover:text-blue-500">TOP</a></li>
+        <li><a href="#skills" class="hover:text-blue-500">理想工作</a></li>
+        <li><a href="#career" class="hover:text-blue-500">履歷</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 主內容 -->
+  <main class="pt-24">
+
+    <!-- 個人簡介 -->
+    <section id="about" class="py-16 px-4" style="background-color:#ffffe0;">
+      <div class="container mx-auto flex flex-col md:flex-row items-center">
+        <img src="0425.jpg" alt="個人照片" class="w-40 h-40 rounded-full border-4 border-blue-300 shadow-md object-cover mb-6 md:mb-0 md:mr-8">
+        <div>
+          <h2 class="text-3xl font-semibold mb-2">李宥萱</h2>
+          <p class="text-lg text-gray-600">資訊管理系學士</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 技能 -->
+    <section id="skills" class="py-16 px-4" style="background-color:#e0ffff;">
+      <div class="container mx-auto text-center">
+        <h2 class="text-2xl font-semibold" style="color:#008080; margin-bottom: 2rem;">未來想從事的工作</h2>
+        <div class="grid grid-cols-1 gap-6 max-w-4xl mx-auto text-left animate-fade-in" style="color:#6a5acd;">
+          <p><strong>我未來想從事的工作：</strong> 資料分析師</p>
+
+          <div>
+            <p class="font-semibold text-lg mb-1" style="color:#6a5acd;">原因：</p>
+            <div class="border-l-4 border-blue-400 pl-4 text-gray-700">
+              從測驗結果發現自己是屬於IS研究社會型，擅長與人溝通、交流，且資料分析師的工作不僅限於某一領域，可以選擇在不同行業（例如金融、醫療、電子商務、科技等）中發揮我的專業能力，探索不同的挑戰與機會。
+            </div>
+          </div>
+
+          <div>
+            <p class="font-semibold text-lg mb-1" style="color:#6a5acd;">工作內容：</p>
+            <div class="border-l-4 border-blue-400 pl-4 text-gray-700">
+              負責評估、研究並設計針對新需求或變更的解決方案，並支持應用程式的安裝、配置、測試與調試，以確保MES及其輔助系統的順利運行。開發並維護知識庫、提供必要的培訓與技術支持、制定測試案例、協同IT與開發團隊、監控系統效能並提供分析報告。
+            </div>
+          </div>
+
+          <div>
+            <p class="font-semibold text-lg mb-1" style="color:#6a5acd;">如何充實自我：</p>
+            <div class="border-l-4 border-blue-400 pl-4 text-gray-700">
+              <ol class="list-decimal list-inside space-y-1 mt-2">
+                <li>學習 Python、R、SQL、Excel 及 Tableau、Power BI 等數據分析工具。</li>
+                <li>加強統計學與數據科學基礎。</li>
+                <li>熟悉機器學習概念與演算法。</li>
+                <li>取得 Google Data Analytics、Microsoft 或 SAS 等認證。</li>
+                <li>參與實習與專案累積實務經驗。</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 職涯目標與分析 -->
+    <section id="career" class="py-16 px-4" style="background-color:#ffffe0;">
+      <div class="container mx-auto text-center">
+        <h2 class="text-2xl font-semibold" style="color:#008080; margin-bottom: 2rem ;">履歷</h2>
+        <img src="Lorna Alvarado.jpg" class="w-[500px] mx-auto rounded-lg shadow-md" alt="履歷圖片">
+
+
+      </div>
+    </section>
+
+
+    <section id="career" class="py-16 px-4" style="background-color:#ffffe0;">
+  <div class="container mx-auto text-center">
+    <h2 class="text-2xl font-semibold" style="color:#008080; margin-bottom: 2rem ;">未來規劃</h2>
+    <div class="max-w-3xl mx-auto text-left animate-fade-in text-gray-700 space-y-4">
+      <p>我目前計畫在大學畢業之前考取記帳士證照，以及修完 Power BI 課程後取得Google Data Analytics 或 Microsoft Data Analyst Associate 等專業認證，為未來的職涯奠定良好的基礎。</p>
+      <p>大三下學期時希望能夠決定好繼續升學或是進入企業實習。</p>
+      <p>長期而言，希望能在科技或電商領域中擔任資深資料分析師，並逐步涉略資料科學與 AI 領域，持續拓展職涯的深度與廣度。</p>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- 連結按鈕 -->
+    <section class="py-8 text-center" data-aos="zoom-in">
+      <div class="space-x-4">
+        <a href="introdution.html" class="inline-block bg-[#4F9D9D] text-white px-6 py-2 rounded-full shadow hover:bg-[#3A7D7D] transition">首頁</a>
+      </div>
+    </section>
+    
+
+  </main>
+
+</body>
+</html>
